@@ -1,8 +1,10 @@
 import React from 'react'
 import {AiFillEdit, AiFillDelete} from "react-icons/ai"
-
-const ExpenseItem = ({ expense }) => {
-    const { id, charge, amount } = expense;
+const ExpenseItem = ({ 
+    expense: { id, charge, amount },
+    handleDelete,
+    handleEdit 
+}) => {
     return (
         <li className="item">
             <div className="info">
