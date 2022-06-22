@@ -1,4 +1,11 @@
-I use 
+On this react app budget-calculator I am going to use 
+
 useState hook
+
 useEffect hook
-form with 2 inputs
+
+React Icons
+
+Forms
+
+Css
