@@ -3,7 +3,7 @@
   --primaryColor: #f15025;
   --mainWhite: #fff;
   --mainBlack: #222;
-  --mainGrey: #9e9e9e;
+  --mainGrey: #4f6b74;
   --mainRed: #d50000;
   --mainGreen: #4caf50;
 }
@@ -124,19 +124,21 @@ label {
   border-radius: 2px;
   padding: 1px 3px;
 }
-.clear-btn,
-.edit-btn {
+.clear-btn {
+  color: var(--mainRed);
   background: none;
   border: none;
   font-size: 1.2rem;
   outline: none;
   cursor: pointer;
 }
-.clear-btn {
-  color: var(--mainRed);
-}
 .edit-btn {
   color: var(--mainGreen);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
 }
 .total {
   font-weight: 300;

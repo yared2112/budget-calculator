@@ -1,7 +1,7 @@
 import React from 'react'
 import {AiFillEdit, AiFillDelete} from "react-icons/ai"
 
-const ExpenseItem = ({expense}) => {
+const ExpenseItem = ({expense, handleEdit, handleDelete }) => {
 const {id, charge, amount} = expense
   return (
     <li className="item">
@@ -13,15 +13,13 @@ const {id, charge, amount} = expense
             <button
                 className="edit-btn"
                 aria-label="edit button"
-                //onClick={() => handleEdit(id)}
-            >
-            <AiFillEdit />
+                onClick={() => handleEdit(id)}>
+                <AiFillEdit />
             </button>
             <button
                 className="clear-btn"
                 aria-label="delete button"
-                //onClick={() => handleDelete(id)}
-            >
+                onClick={() => handleDelete(id)}>
                 <AiFillDelete />
             </button>
         </div>
